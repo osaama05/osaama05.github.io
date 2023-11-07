@@ -4,10 +4,12 @@
         <h1>Hello World</h1>
         <p>I'm hosted with GitHub Pages.</p>
         <button id="triviaButton">Trivia</button>
+        <script>
+            document.getElementById("triviaButton").addEventListener("click", redirect);
+            function redirect()
+            { 
+                window.location = "https://osaama05.github.io/Trivia"; 
+            }
+        </script>
     </body>
 </html>
-
-<script>
-    document.getElementById("triviaButton").addEventListener("click", redirect);
-    function redirect(){ window.location = "https://osaama05.github.io/Trivia"; }
-</script>
